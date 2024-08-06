@@ -1,35 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
-
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>Tickets</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Available Tickets</title>
 <link
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	rel="stylesheet">
 </head>
 <body>
 	<div class="container">
-		<h1>利用可能なチケット</h1>
-		<table class="table table-striped">
+		<h1 class="mt-5">Available Tickets</h1>
+		<table class="table table-striped mt-3">
 			<thead>
 				<tr>
-					<th>イベント名</th>
-					<th>日付</th>
-					<th>利用可能な座席数</th>
+					<th scope="col">Event</th>
+					<th scope="col">Date</th>
+					<th scope="col">Available Seats</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -43,5 +32,10 @@
 			</tbody>
 		</table>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
