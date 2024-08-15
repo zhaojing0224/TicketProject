@@ -27,9 +27,8 @@ public class TicketTest extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// チケット情報をリクエスト属性に設定
+
 		request.setAttribute("tickets", tickets);
-		// JSPページにフォワード
 		request.getRequestDispatcher("/tickets.jsp").forward(request, response);
 	}
 
@@ -52,9 +51,7 @@ public class TicketTest extends HttpServlet {
 			}
 		}
 
-		// チケット情報をリクエスト属性に設定
 		request.setAttribute("tickets", tickets);
-		// JSPページにフォワード
 		request.getRequestDispatcher("/tickets.jsp").forward(request, response);
 	}
 }
